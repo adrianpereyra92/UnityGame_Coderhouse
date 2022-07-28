@@ -1,3 +1,8 @@
 # Proyecto de Desarrollo de Videojuegos de Coderhouse
-## Desarrollado en Unity Engine por Adrian Pereyra 
+
+### Equipo: 
+  - Adrian
+  - Almendra
+  
+### Versión de Unity: 2021.3.5f1   
 
