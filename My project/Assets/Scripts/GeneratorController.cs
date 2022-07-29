@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class GeneratorController : MonoBehaviour
 {
-    public GameObject [] enemyPrefab;
+    public GameObject [] bulletPrefab;
     public float spawnDelay = 2f;
     public float spawnInterval = 2f;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("EnemySpawn", spawnDelay, spawnInterval);
+        InvokeRepeating("Shoot", spawnDelay, spawnInterval);
     }
     // Update is called once per frame
     void Update()
     {
         
     }
-    private void EnemySpawn()
+    private void Shoot()
     {
-        int enemyIndex = Random.Range(0, enemyPrefab.Length);
-        Instantiate(enemyPrefab[enemyIndex], transform);
+        int bulletIndex = Random.Range(0, bulletPrefab.Length);
+        Instantiate(bulletPrefab[bulletIndex], transform);
     }
    
 }
