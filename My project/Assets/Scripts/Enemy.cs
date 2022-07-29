@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public float enemySpeed = 3f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +15,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-                transform.position = transform.position + Vector3.left * Time.deltaTime;
+                transform.position += Vector3.left * enemySpeed * Time.deltaTime;
 
     }
 }
